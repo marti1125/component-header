@@ -36,6 +36,15 @@
       },
       headerChanged: function (oldValue, newValue) {
         this.$.headerText.innerHTML = newValue;
+      },
+      navigateHere: function () {
+        var parent = this.parentNode;
+        while (parent.nodeName !== "CECI-CARD") {
+          parent = parent.parentNode;
+        }
+        if (parent) {
+          parent.show();
+        }
       }
     });
   </script>
