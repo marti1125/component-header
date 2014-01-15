@@ -7,6 +7,7 @@
       {
         "tags": ["starter", "layout", "navigation"],
         "thumbnail": "./thumbnail.png",
+        "name": "Header".
         "broadcasts": {},
         "listeners": {
           "navigateHere": {
@@ -32,7 +33,6 @@
     Polymer('ceci-header', {
       ready: function () {
         this.super();
-        this.$.headerText.innerHTML = this.header;
       },
       headerChanged: function (oldValue, newValue) {
         this.$.headerText.innerHTML = newValue;
