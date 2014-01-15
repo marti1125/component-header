@@ -1,0 +1,6 @@
+{
+	"ceci-header": "ส่วนหัว",
+	"ceci-header/attributes/header" : "ส่วนหัว",
+	"ceci-header/attributes/header/label" : "ฉลากหัว",
+	"ceci-header/attributes/header/description" : "ข้อความสำหรับป้ายส่วนหัว"
+}

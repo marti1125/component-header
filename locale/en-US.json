@@ -1,0 +1,6 @@
+{
+	"ceci-header": "Header",
+	"ceci-header/attributes/header" : "Header",
+	"ceci-header/attributes/header/label" : "Header Label",
+	"ceci-header/attributes/header/description" : "Text for header label"
+}
