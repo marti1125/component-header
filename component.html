@@ -1,31 +1,31 @@
 <polymer-element name="ceci-header" attributes="header" extends="ceci-element" header="Header">
+  <ceci-definition>
+    {
+      "tags": ["starter", "layout", "navigation"],
+      "thumbnail": "./thumbnail.png",
+      "description": "A page header. You can send it a signal to navigate to that page.",
+      "name": "Header",
+      "broadcasts": {},
+      "listeners": {
+        "navigateHere": {
+          "description": "navigateHere",
+          "label": "Navigate Here"
+        }
+      },
+      "attributes": {
+        "header": {
+          "label": "Header Label",
+          "description": "Text for header label",
+          "editable": "text",
+          "listener": true
+        }
+      }
+    }
+  </ceci-definition>
   <template>
     <link rel="stylesheet" href="component.css"></link>
     <header id="headerText"></header>
     <shadow></shadow>
-    <script type="text/json" id="ceci-definition">
-      {
-        "tags": ["starter", "layout", "navigation"],
-        "thumbnail": "./thumbnail.png",
-        "description": "A page header. You can send it a signal to navigate to that page.",
-        "name": "Header",
-        "broadcasts": {},
-        "listeners": {
-          "navigateHere": {
-            "description": "navigateHere",
-            "label": "Navigate Here"
-          }
-        },
-        "attributes": {
-          "header": {
-            "label": "Header Label",
-            "description": "Text for header label",
-            "editable": "text",
-            "listener": true
-          }
-        }
-      }
-    </script>
   </template>
   <script>
     Polymer('ceci-header', {
